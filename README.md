@@ -1,9 +1,9 @@
 # Enterprise-Backup-Disaster-Recovery-Lab
 Designed and implemented an enterprise-style Backup and Disaster Recovery environment using VMware Workstation and Veeam Backup &amp; Replication. The lab demonstrates VM-level backups, incremental backup strategies, SureBackup verification, ransomware recovery, file-level restores, full VM recovery, and disaster recovery planning.
-# 💾 Backup & Disaster Recovery Home Lab
+#  Backup & Disaster Recovery Home Lab
 ### Building, Testing, Breaking and Recovering an Enterprise Backup Environment with Veeam
 
-## 📖 Overview
+##  Overview
 
 Backups are only valuable if they can be restored.
 
@@ -15,7 +15,7 @@ Throughout the project I measured recovery times, verified backup integrity, doc
 
 ---
 
-## 🎯 Project Objectives
+##  Project Objectives
 
 - Design an enterprise-style backup architecture
 - Configure automated VM-level backups
@@ -46,7 +46,7 @@ Throughout the project I measured recovery times, verified backup integrity, doc
 
 ---
 
-# 🖥 Virtual Machines
+#  Virtual Machines
 
 | Machine | Purpose |
 |----------|----------|
@@ -57,7 +57,7 @@ Throughout the project I measured recovery times, verified backup integrity, doc
 
 ---
 
-# 🔑 Skills Demonstrated
+#  Skills Demonstrated
 
 - Backup Infrastructure Design
 - Disaster Recovery Planning
@@ -84,7 +84,7 @@ Throughout the project I measured recovery times, verified backup integrity, doc
 
 ---
 
-# 🧪 Scenarios Tested
+#  Scenarios Tested
 
 ✅ Full Virtual Machine Restore
 
@@ -129,7 +129,7 @@ No real malware was used during this project.
 
 ---
 
-# 📊 Results
+#  Results
 
 | Test | Result |
 |------|---------|
@@ -142,7 +142,7 @@ No real malware was used during this project.
 
 ---
 
-## 📈 Recovery Metrics
+##  Recovery Metrics
 
 | Metric | Result |
 |---------|---------|
@@ -154,7 +154,7 @@ No real malware was used during this project.
 
 ---
 
-# 📚 Key Lessons Learned
+#  Key Lessons Learned
 
 One of the biggest lessons from this project was that **creating backups is only half the job**.
 
@@ -171,7 +171,7 @@ I also gained practical experience troubleshooting VSS issues, configuring appli
 
 ---
 
-# 📁 Repository Structure
+#  Repository Structure
 
 ```
 Backup-Disaster-Recovery/
@@ -180,37 +180,13 @@ Backup-Disaster-Recovery/
 ├── Documentation/
 │     └── Backup & Disaster Recovery Laboratory Documentation.pdf
 │
-├── Images/
-│     ├── Lab Architecture.png
-│     ├── Backup Jobs.png
-│     ├── SureBackup.png
-│     ├── Full Restore.png
-│     ├── File Restore.png
-│     └── Ransomware Simulation.png
-│
-└── Assets/
-      └── Screenshots
+├
 ```
 
 ---
-
-# 📸 Project Screenshots
-
-Include screenshots such as:
-
-- Lab Architecture
-- Veeam Dashboard
-- Backup Jobs
-- Backup Repository
-- SureBackup Verification
-- Successful Restore
-- File-Level Recovery
-- Backup Copy Job
-- Disaster Recovery Workflow
-
 ---
 
-# 🚀 Technologies Used
+#  Technologies Used
 
 - VMware Workstation
 - Veeam Backup & Replication Community Edition
@@ -244,7 +220,7 @@ The complete project documentation covers:
 
 ---
 
-# 🎯 Outcome
+#  Outcome
 
 This project demonstrates practical experience in designing, implementing, testing, and validating a backup and disaster recovery solution using industry-standard tools.
 
@@ -256,4 +232,4 @@ Rather than simply configuring software, I intentionally created failure scenari
 
 **Clinton Kehinde**
 
-Aspiring IT Support | Systems Administrator | Cybersecurity Enthusiast
+ IT Support | Systems Administrator | Cybersecurity Enthusiast
