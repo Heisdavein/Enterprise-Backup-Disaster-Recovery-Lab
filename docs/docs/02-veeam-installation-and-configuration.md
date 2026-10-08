@@ -1,6 +1,5 @@
 # 2. Installing and Configuring Veeam Backup & Replication
 
-[← Previous: Lab Environment](01-lab-environment-and-architecture.md) | [Next: Running and Verifying Backups →](03-running-and-verifying-backups.md)
 
 ---
 
