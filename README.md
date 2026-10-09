@@ -98,8 +98,8 @@ I timed every recovery, wrote down every problem I hit, and finished by writing 
 
 **Network:** VMware NAT (VMnet8)
 
-> **📸 Screenshot Placeholder**
-> Insert screenshot showing: The VMware Workstation Player library with all four virtual machines (DC01, Client01, WebServer01 and BackupServer) listed.
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/0ebbf640-b50f-445a-bf28-d638c574bf00" />
+ Insert screenshot showing: The VMware Workstation Player library with all four virtual machines (DC01, Client01, WebServer01 and BackupServer) listed.
 
 ---
 
