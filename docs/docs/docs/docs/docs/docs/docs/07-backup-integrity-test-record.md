@@ -1,7 +1,5 @@
 # 7. Backup Integrity Testing Record
 
-[← Previous: Disaster Recovery Plan](06-disaster-recovery-plan.md) | [Next: Challenges and Troubleshooting →](08-challenges-and-troubleshooting.md)
-
 ---
 
 ## Overview
