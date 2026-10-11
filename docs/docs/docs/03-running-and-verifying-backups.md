@@ -1,7 +1,5 @@
 # 3. Running Backups and Verifying Their Integrity
 
-[← Previous: Installation and Configuration](02-veeam-installation-and-configuration.md) | [Next: Full and File-Level Restores →](04-full-and-file-level-restores.md)
-
 ---
 
 ## Overview
@@ -87,8 +85,8 @@ Then I ran the same backup job again.
 
 After the job finished, the Veeam console showed two restore points: the original full backup and the new incremental one. That showed me how Veeam builds a **backup chain** over time.
 
-> **📸 Screenshot Placeholder**
-> Insert screenshot showing: The Veeam Backups > Disk view listing both restore points for `DailyBackup_AllProduction`: the full backup from day one and the incremental from day two, with their sizes.
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/ed0b2882-95fb-443e-98cc-e4470638b36f" />
+The Veeam Backups > Disk view listing both restore points for `DailyBackup_AllProduction`: the full backup from day one and the incremental from day two, with their sizes.
 
 ### Why I changed files first
 
@@ -111,8 +109,8 @@ SureBackup starts a VM directly from its backup file inside an isolated test env
 3. I created a **Virtual Lab**, an isolated network where backup copies can start safely without affecting my production environment.
 4. I added **DC01** as the application group because it was the most important server in my lab.
 
-> **📸 Screenshot Placeholder**
-> Insert screenshot showing: The SureBackup job `Verify_DailyBackup` in the Veeam console, with its Virtual Lab and DC01 listed as the application group.
+ <img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/8fe15069-3e32-41f5-a55e-678ac8ba6335" />
+ The SureBackup job `Verify_DailyBackup` in the Veeam console, with its Virtual Lab and DC01 listed as the application group.
 
 ### Verification tests I configured
 
@@ -176,9 +174,8 @@ Before using SureBackup I assumed a successful backup meant I was protected. Aft
 - SureBackup proves backups actually work.
 - Never assume. Always verify.
 
-> **📸 Screenshot Placeholder**
-> Insert screenshot showing: A summary view of the backup results (full vs incremental duration and size) and the completed SureBackup job, to use as the section's overview graphic.
+ <img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/d2dc069b-d930-4c59-bfb1-bf58a640fa06" />
+A summary view of the backup results (full vs incremental duration and size) and the completed SureBackup job, to use as the section's overview graphic.
 
 ---
 
-[← Previous: Installation and Configuration](02-veeam-installation-and-configuration.md) | [Next: Full and File-Level Restores →](04-full-and-file-level-restores.md)
