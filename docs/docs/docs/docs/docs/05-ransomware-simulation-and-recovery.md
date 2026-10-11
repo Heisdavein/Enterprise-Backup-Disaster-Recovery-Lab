@@ -258,15 +258,6 @@ Deleting the Windows Shadow Copies did not stop me from recovering the data. Vee
 
 That is why organisations invest in dedicated backup solutions instead of relying solely on Windows recovery features.
 
-> [!NOTE]
-> My simulation was deliberately limited. Real ransomware may behave differently, for example by stealing data first or going after backup servers and credentials. My results show that this specific attack pattern was recoverable in my lab, not that every attack would be.
-
----
-
-## Visual Summary
-
-![Section 5 summary: ransomware attack simulation and recovery](../images/05-ransomware-summary.png)
-
 ---
 
 ## What I Took Away From This Section
