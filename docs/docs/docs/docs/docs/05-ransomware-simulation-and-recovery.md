@@ -66,11 +66,11 @@ The shares live under `CompanyShares$` on DC01.
 | Temp | 1 |
 | **Total** | **47** |
 
-> **📸 Screenshot Placeholder**
-> Insert screenshot showing: The baseline inventory of the DC01 file shares (folder names, file counts, sizes and creation dates) recorded before the simulation.
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/a30f3e43-a1a3-4195-bbfc-7a206c1d91f9" />
+The baseline inventory of the DC01 file shares (folder names, file counts, sizes and creation dates) recorded before the simulation.
 
-> **📸 Screenshot Placeholder**
-> Insert screenshot showing: The Veeam job session for the fresh pre-attack backup with its completion time, which I used as my known-clean restore point.
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/c645cb9c-0e8d-440b-aa6b-015e67ffb528" />
+The Veeam job session for the fresh pre-attack backup with its completion time, which I used as my known-clean restore point.
 
 ### Why I created a backup immediately beforehand
 
@@ -100,11 +100,11 @@ Almost immediately every file in the shared folders was renamed with the `.LOCKE
 > [!CAUTION]
 > This command renames **every file** it can reach on the target share. Only run it in an isolated lab, against data you can afford to lose, and only with a tested backup in place.
 
-> **📸 Screenshot Placeholder**
-> Insert screenshot showing: PowerShell on Client01 with the simulation command entered and run.
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/303630ed-f5f1-4c18-a621-56ae0413d861" />
+PowerShell on Client01 with the simulation command entered and run.
 
-> **📸 Screenshot Placeholder**
-> Insert screenshot showing: The `\\DC01\CompanyShares$` folder in File Explorer after the simulation, with the folders and files showing the `.LOCKED` extension.
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/26e40142-403f-486c-b3a6-2612e9159ad3" />
+ The `\\DC01\CompanyShares$` folder in File Explorer after the simulation, with the folders and files showing the `.LOCKED` extension.
 
 ### Step 2: Simulating Shadow Copy deletion
 
@@ -141,8 +141,8 @@ From **Client01**, I tried to browse to my backup server and access the backup r
 | ---- | --------------- | ------------- | ------ |
 | Access the backup repository from Client01 | Access denied or unreachable | I could not reach it. The repository was not shared over the network, and Windows Firewall stopped normal users from reaching it. Only Veeam could communicate with the backup storage. | ✅ |
 
-> **📸 Screenshot Placeholder**
-> Insert screenshot showing: Client01 failing to browse to the BackupServer's backup repository (for example, a network path error when trying to open the share).
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/62a2f4dd-14f2-448b-a54c-8b917e3104a1" />
+Client01 failing to browse to the BackupServer's backup repository (for example, a network path error when trying to open the share).
 
 #### What I learned
 
@@ -187,8 +187,8 @@ The first priority was to stop any further damage.
 
 My simulation could not spread like real ransomware, but I wanted to practise the same containment steps used in real incidents. Keeping a copy of the compromised system is good practice because it **preserves evidence** that could be used for forensic investigation.
 
-> **📸 Screenshot Placeholder**
-> Insert screenshot showing: VMware showing DC01's network adapter disconnected, and the Snapshot Manager listing the snapshot of the affected DC01 taken before recovery.
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/3fce3573-6bc9-4253-a5a7-dce3cbcc0633" />
+VMware showing DC01's network adapter disconnected, and the Snapshot Manager listing the snapshot of the affected DC01 taken before recovery.
 
 ### Phase 2: Choosing the right recovery method
 
@@ -209,11 +209,11 @@ The operating system, Active Directory and DNS were all still working normally. 
 
 The restore took about **eight minutes** and every affected file was recovered.
 
-> **📸 Screenshot Placeholder**
-> Insert screenshot showing: The Veeam File-Level Restore browser on the clean restore point (the previous night's backup) with the `CompanyShares` folder selected and the restore mode set to overwrite at the original location.
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/7034fdad-1550-4550-8949-d8619cd7dadc" />
+The Veeam File-Level Restore browser on the clean restore point (the previous night's backup) with the `CompanyShares` folder selected and the restore mode set to overwrite at the original location.
 
-> **📸 Screenshot Placeholder**
-> Insert screenshot showing: The completed file restore session in Veeam with status Completed and a duration of about eight minutes.
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/0d27ff49-04b3-454e-b01d-b8a1ffc78d22" />
+ The completed file restore session in Veeam with status Completed and a duration of about eight minutes.
 
 ### Phase 4: Verifying the recovery
 
@@ -236,8 +236,8 @@ Finally I reconnected DC01 to the network and confirmed that users could access 
 | File count | 47 files restored | All 47 restored | ✅ |
 | User access | Users can reach shared folders | Users could access shares normally | ✅ |
 
-> **📸 Screenshot Placeholder**
-> Insert screenshot showing: The `\\DC01\CompanyShares$` folders after recovery with normal names and no `.LOCKED` extension, and a document opened to confirm its contents.
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/7aeb2819-f5ef-479e-9553-c96d8907c620" />
+The `\\DC01\CompanyShares$` folders after recovery with normal names and no `.LOCKED` extension, and a document opened to confirm its contents.
 
 ### Recovery results
 
@@ -275,7 +275,3 @@ That is why organisations invest in dedicated backup solutions instead of relyin
 - Backup isolation protects the safety net from the attack.
 - File-level restore is faster and less disruptive than a full VM restore when the damage is limited to files.
 - Regular restore testing builds confidence and exposes gaps before a real incident.
-
----
-
-[← Previous: Full and File-Level Restores](04-full-and-file-level-restores.md) | [Next: Disaster Recovery Plan →](06-disaster-recovery-plan.md)
