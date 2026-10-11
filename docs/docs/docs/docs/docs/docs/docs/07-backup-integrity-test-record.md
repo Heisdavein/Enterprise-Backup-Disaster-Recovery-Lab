@@ -23,9 +23,6 @@ In a real organisation, records like this become part of the **backup audit trai
 | 5 | Incremental backup integrity | CRC checksum verification | ✅ Pass | N/A |
 | 6 | Backup copy job | Secondary backup copy completed successfully | ✅ Pass | N/A |
 
-> **📸 Screenshot Placeholder**
-> Insert screenshot showing: The completed test log (all six tests marked Pass) as recorded in my documentation.
-
 ---
 
 ## Detailed Verification
@@ -41,17 +38,17 @@ Each test proved something different.
 | 5 | Prove the stored backup files are not corrupted | CRC checksum verification of the incremental backup | No corruption found | Passed | ✅ |
 | 6 | Prove a second copy of my backups exists | Checked that the backup copy job completed to `E:\VeeamBackups\OffCopy` | Copy completes successfully | Completed successfully | ✅ |
 
-> **📸 Screenshot Placeholder**
-> Insert screenshot showing: Evidence for test 1: DC01 running after the full restore, with the IP address and Active Directory working.
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/f1b653d9-6223-4ac6-b13e-49f780ca86dc" />
+Evidence for test 1: DC01 running after the full restore, with the IP address and Active Directory working.
 
-> **📸 Screenshot Placeholder**
-> Insert screenshot showing: Evidence for tests 2 and 3: the restored `Financial_Q3` folder (12 files) and the restored `CompanyShares` folders (47 files) after recovery.
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/eff1a027-f968-4094-89df-81aa785542fe" />
+Evidence for tests 2 and 3: the restored `Financial_Q3` folder (12 files) and the restored `CompanyShares` folders (47 files) after recovery.
 
-> **📸 Screenshot Placeholder**
-> Insert screenshot showing: Evidence for test 4: the SureBackup job `Verify_DailyBackup` completed with Heartbeat, Ping, Application and CRC tests passed.
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/f6c90a3b-73e2-4331-a76d-cde39c33e3f2" />
+Evidence for test 4: the SureBackup job `Verify_DailyBackup` completed with Heartbeat, Ping, Application and CRC tests passed.
 
-> **📸 Screenshot Placeholder**
-> Insert screenshot showing: Evidence for test 6: the Veeam backup copy job session showing Success and the secondary copy in `E:\VeeamBackups\OffCopy`.
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/4c0da6d2-e98d-4d1f-a5a0-9f7950939999" />
+Evidence for test 6: the Veeam backup copy job session showing Success and the secondary copy in `E:\VeeamBackups\OffCopy`.
 
 > [!NOTE]
 > The six tests are a mix of three **restore** tests, one **automated boot verification**, one **file-integrity check** and one **backup copy check**. I count them together as my backup testing record, but I am careful not to call all six "restores".
@@ -83,6 +80,3 @@ Every test completed successfully, and each one showed something different about
 > [!IMPORTANT]
 > A backup that has never been restored is something you *hope* will work. A backup that has been restored, verified and documented is one you can trust.
 
----
-
-[← Previous: Disaster Recovery Plan](06-disaster-recovery-plan.md) | [Next: Challenges and Troubleshooting →](08-challenges-and-troubleshooting.md)
