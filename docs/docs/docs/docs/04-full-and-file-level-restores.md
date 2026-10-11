@@ -35,8 +35,8 @@ At that point the server no longer existed on my computer. The only remaining co
 > [!CAUTION]
 > I only deleted DC01 *after* confirming a good restore point existed and noting which one I would use. Never delete the only copy of a machine in a lab, or anywhere else, until you know your backup is usable.
 
-> **📸 Screenshot Placeholder**
-> Insert screenshot showing: The VMware Workstation Player library with DC01 no longer listed (Client01, WebServer01 and BackupServer still present), confirming the VM was deleted.
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/0ceba5fc-39bc-42da-a076-e7614c6ba239" />
+ The VMware Workstation Player library with DC01 no longer listed (Client01, WebServer01 and BackupServer still present), confirming the VM was deleted.
 
 ### Restoring the virtual machine
 
@@ -55,14 +55,14 @@ In the Veeam console I went to **Home > Backups > Disk**, then:
 
 7. Reviewed the summary and clicked **Finish**.
 
-> **📸 Screenshot Placeholder**
-> Insert screenshot showing: The Full VM Restore wizard's Restore Mode page with "Restore to original location" selected.
+ <img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/8ddf9f61-b08e-4ff5-b7ea-cfdf6cb1b341" />
+  The Full VM Restore wizard's Restore Mode page with "Restore to original location" selected.
 
-> **📸 Screenshot Placeholder**
-> Insert screenshot showing: The Full VM Restore wizard's Reason page with the text "Testing full VM recovery from simulated hardware failure." entered.
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/dc7b44bf-57cd-414f-ae05-929e8eb2d4a0" />
+ The Full VM Restore wizard's Reason page with the text "Testing full VM recovery from simulated hardware failure." entered.
 
-> **📸 Screenshot Placeholder**
-> Insert screenshot showing: The Full VM Restore summary page showing DC01, the chosen restore point and the restore mode before clicking Finish.
+ <img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/8933d87c-6f49-43d7-a603-0cd916388ed4" />
+ The Full VM Restore summary page showing DC01, the chosen restore point and the restore mode before clicking Finish.
 
 #### Why I filled in the restore reason
 
@@ -86,8 +86,8 @@ Building good habits in a lab makes them natural in a production environment.
 
 The entire restore finished in about **22 minutes**.
 
-> **📸 Screenshot Placeholder**
-> Insert screenshot showing: The Veeam restore session for DC01 showing each stage completed and the total duration of about 22 minutes.
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/47779910-6bcc-460c-b176-f9f6d240f649" />
+The Veeam restore session for DC01 showing each stage completed and the total duration of about 22 minutes.
 
 ### Verification
 
@@ -104,11 +104,11 @@ When DC01 powered on, the first thing I did was check that everything had been r
 
 Everything worked exactly as it did before the server was deleted. That proved my backup was not just sitting on a hard drive. It could recover an entire production server.
 
-> **📸 Screenshot Placeholder**
-> Insert screenshot showing: DC01 after the restore, with `ipconfig /all` output showing the original IP address and computer name, plus Active Directory Users and Computers open and working.
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/59dffc84-9ad7-43b6-ac73-45f563506e76" />
+ DC01 after the restore, with `ipconfig /all` output showing the original IP address and computer name, plus Active Directory Users and Computers open and working.
 
-> **📸 Screenshot Placeholder**
-> Insert screenshot showing: Client01 logged in with a domain account after the restore, proving authentication against the restored DC01.
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/8073d414-2990-4de7-a1a6-d1802fccf3d4" />
+Client01 logged in with a domain account after the restore, proving authentication against the restored DC01.
 
 ### My first real Recovery Time Objective (RTO)
 
@@ -135,11 +135,11 @@ Restoring a whole server was interesting, but most IT support requests are much 
 
 At that point there was no normal Windows way of getting the files back. The only remaining copy was inside my backup.
 
-> **📸 Screenshot Placeholder**
-> Insert screenshot showing: The shared folder on DC01 with the `Financial_Q3` folder containing twelve documents, before deletion.
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/22747323-2732-494e-baef-57cfc04a2846" />
+The shared folder on DC01 with the `Financial_Q3` folder containing twelve documents, before deletion.
 
-> **📸 Screenshot Placeholder**
-> Insert screenshot showing: The same shared folder after deletion with `Financial_Q3` missing and an empty Recycle Bin.
+ <img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/371edb49-7008-4163-a79d-22201895eb0f" />
+ The same shared folder after deletion with `Financial_Q3` missing and an empty Recycle Bin.
 
 ### Restoring the deleted files
 
@@ -156,11 +156,11 @@ A new window opened and Veeam displayed the backup almost like another hard driv
 6. Within moments Veeam copied the folder back to DC01.
 7. I checked the shared folder and confirmed everything had been restored.
 
-> **📸 Screenshot Placeholder**
-> Insert screenshot showing: The Veeam File-Level Restore browser with the DC01 backup mounted, the `Financial_Q3` folder selected, and the right-click menu showing "Restore to original location".
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/a1655e68-63b2-4374-bed0-01cceab54bda" />
+The Veeam File-Level Restore browser with the DC01 backup mounted, the `Financial_Q3` folder selected, and the right-click menu showing "Restore to original location".
 
-> **📸 Screenshot Placeholder**
-> Insert screenshot showing: The shared folder on DC01 after the restore, with `Financial_Q3` back and all twelve documents present.
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/971c65cc-1543-4bfc-ab7e-6c984eb75ae9" />
+The shared folder on DC01 after the restore, with `Financial_Q3` back and all twelve documents present.
 
 ### Results
 
@@ -208,4 +208,3 @@ The server kept running the whole time. No users were disconnected and no servic
 
 ---
 
-[← Previous: Running and Verifying Backups](03-running-and-verifying-backups.md) | [Next: Ransomware Simulation and Recovery →](05-ransomware-simulation-and-recovery.md)
