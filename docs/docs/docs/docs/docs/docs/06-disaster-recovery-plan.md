@@ -1,7 +1,5 @@
 # 6. Developing My Disaster Recovery Plan
 
-[← Previous: Ransomware Simulation and Recovery](05-ransomware-simulation-and-recovery.md) | [Next: Backup Integrity Test Record →](07-backup-integrity-test-record.md)
-
 ---
 
 ## Overview
@@ -210,9 +208,4 @@ My lab shows the core principles of enterprise backup, not every enterprise feat
 
 Writing this plan brought together everything I had learned. I stopped thinking only about configuring backup software and started thinking about how an organisation actually recovers from an outage: prioritising systems, documenting procedures, measuring recovery times and planning for business continuity.
 
-> **📸 Screenshot Placeholder**
-> Insert screenshot showing: A summary view of the DR plan (RPO/RTO table, severity levels and system priority list) to use as the section's overview graphic.
-
 ---
-
-[← Previous: Ransomware Simulation and Recovery](05-ransomware-simulation-and-recovery.md) | [Next: Backup Integrity Test Record →](07-backup-integrity-test-record.md)
