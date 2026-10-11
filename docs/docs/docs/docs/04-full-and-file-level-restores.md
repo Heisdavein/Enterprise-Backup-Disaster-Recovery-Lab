@@ -193,12 +193,6 @@ The server kept running the whole time. No users were disconnected and no servic
 
 ---
 
-## Visual Summary
-
-![Section 4 summary: full and file-level restores](../images/04-restores-summary.png)
-
----
-
 ## What I Took Away From This Section
 
 - Running backups is not enough. I have to verify restores.
