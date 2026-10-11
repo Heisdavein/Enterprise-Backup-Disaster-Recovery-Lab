@@ -61,8 +61,9 @@ Application-aware processing completed
 Backup job completed successfully
 ```
 
-> **📸 Screenshot Placeholder**
-> Insert screenshot showing: The backup job's Guest Processing credentials set to `LAB\Administrator`, and the next job log showing Application-Aware Processing completed successfully.
+
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/8c6d7c59-19ea-4cba-b04a-b725fdac220a" />
+  The backup job's Guest Processing credentials set to `LAB\Administrator`, and the next job log showing Application-Aware Processing completed successfully.
 
 ### What I learned
 
@@ -92,8 +93,8 @@ ERROR: Timeout waiting for application to start
 SureBackup job failed
 ```
 
-> **📸 Screenshot Placeholder**
-> Insert screenshot showing: The first SureBackup session with the heartbeat test passed and the Active Directory application test failed with a timeout.
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/3961665f-010a-4409-aca7-7acd0b19e542" />
+The first SureBackup session with the heartbeat test passed and the Active Directory application test failed with a timeout.
 
 ### Root cause analysis
 
@@ -158,8 +159,8 @@ At first I thought the backup files were damaged. They were not. The problem was
 
 Another option would have been to restore the server to a completely different location under a new name.
 
-> **📸 Screenshot Placeholder**
-> Insert screenshot showing: VMware with DC01 removed from the inventory, followed by the Veeam restore session completing successfully.
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/28b5ec84-e308-44e5-a757-f2e4feb9196d" />
+Mware with DC01 removed from the inventory, followed by the Veeam restore session completing successfully.
 
 ### What I learned
 
@@ -170,11 +171,6 @@ Successful disaster recovery is not only about knowing how to restore backups. I
 
 ---
 
-## Visual Summary
-
-![Section 8 summary: challenges I encountered and what they taught me](../images/08-challenges-summary.png)
-
----
 
 ## Reflection
 
@@ -184,4 +180,3 @@ Instead I gained experience reading logs, interpreting error messages, identifyi
 
 ---
 
-[← Previous: Backup Integrity Test Record](07-backup-integrity-test-record.md) | [Next: Lessons Learned and Portfolio Summary →](09-lessons-learned-and-portfolio-summary.md)
