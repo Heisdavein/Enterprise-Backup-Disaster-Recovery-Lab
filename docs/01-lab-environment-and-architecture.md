@@ -1,6 +1,6 @@
 # 1. My Lab Environment and Architecture
 
-[← Back to README](../README.md) | [Next: Veeam Installation and Configuration →](02-veeam-installation-and-configuration.md)
+
 
 ---
 
@@ -29,8 +29,8 @@ Planning also made the rest of the project easier, because it gave me a clear pi
 
 My Windows 11 computer was the host for the entire lab. Every virtual machine ran through VMware Workstation, so this one physical computer powered everything in the project.
 
-> **📸 Screenshot Placeholder**
-> Insert screenshot showing: Windows 11 Settings > System > About (or Task Manager > Performance) confirming the host's Intel Core i5 CPU and 8 GB of RAM.
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/000b84b5-899f-460e-b7eb-3986cd7f79bf" />
+ Windows 11 Settings > System > About (or Task Manager > Performance) confirming the host's Intel Core i5 CPU and 8 GB of RAM.
 
 ### Decision: Store backups on a separate physical drive
 
@@ -134,5 +134,3 @@ I designed the lab around the **3-2-1 rule**:
 Planning the lab this way taught me that an effective backup strategy is not just about making copies of data. It is about making sure those copies are still available when they are needed. That mindset shaped every decision I made in the rest of the project.
 
 ---
-
-[← Back to README](../README.md) | [Next: Veeam Installation and Configuration →](02-veeam-installation-and-configuration.md)
