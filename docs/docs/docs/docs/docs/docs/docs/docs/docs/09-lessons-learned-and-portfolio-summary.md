@@ -154,7 +154,3 @@ The biggest lesson I took away is that backups should never be judged by whether
 Looking back, this project was not simply about learning Veeam. It was about developing the mindset of an IT professional who understands that protecting systems is only half the job. The real responsibility is making sure those systems can be recovered quickly, safely and with minimal disruption when something goes wrong.
 
 > *A backup you have never tested is not a backup. It is hope.*
-
----
-
-[← Previous: Challenges and Troubleshooting](08-challenges-and-troubleshooting.md) | [Back to README](../README.md)
